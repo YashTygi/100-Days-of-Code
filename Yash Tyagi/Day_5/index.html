@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    :root {
+  --bg: #efefca;
+  --speed: 3s;
+  --bg-f: black;
+}
+body {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background: var(--bg);
+}
+h1 {
+  position: relative;
+}
+h1::before,
+h1::after {
+  content:'';
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  position:absolute;
+}
+
+h1::before {
+  background: var(--bg);
+  animation: type var(--speed) steps(25) forwards;
+}
+h1::after {
+  width: 0.08em;
+  background: var(--bg-f);
+  animation: type var(--speed) steps(25) forwards,
+    blink 600ms steps(25) infinite;;
+}
+.sub {
+  font-size: 1.3em;
+  animation: fade 500ms ease forwards;
+  transform: translateY(1em);
+  opacity: 0;
+}
+@keyframes type {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fade {
+  0% {opacity:0; top:-1em;}
+  100% {opacity:1; top:0;}
+}
+  </style>
+</head>
+<body>
+  <h1>Bonjour, my name is Yash.</h1>
+  <p class="sub">This is my Website!</p>
+</body>
+</html>
