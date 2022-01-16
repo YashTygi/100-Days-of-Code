@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+body {
+  background: url(https://www.ecuafrance.com/wp-content/uploads/2017/08/Viewing-Gallery-For-Black-And-White-Vintage-Eiffel-Tower-Wallpaper.jpg) no-repeat;
+  background-size: cover;
+}
+.container {
+  width: 300px;
+  position: absolute;
+  top: 21%;
+  left: 38%;
+  color: white;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(100px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #f8f8ff;
+}
+.user input {
+  display: block;
+  width: 92%;
+  padding: 13px;
+  margin: 10px;
+  box-sizing: border-box;
+  background: #c0c0c0;
+  border: none;
+  font-size: 13px;
+}
+
+.btn input {
+  background: #555555;
+  font-size: 15px;
+  color: #c0c0c0;
+}
+
+a {
+  text-decoration: none;
+}
+a :hover {
+  background: rgba(255, 255, 255, 0.1);
+  
+}
+.user a {
+  text-decoration: none;
+  color: #f8f8ff;
+  padding: 10px;
+}
+.user a: hover {
+  color:#555555;
+}
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title"><h1>User Login</h1></div>
+    <div class="user">
+      <div class="input">
+        <label for="fname"></label> <input type="text" placeholder="John" required>
+        <div class="input">
+        <label for="lname"></label> <input type="text" placeholder="Doe" required>
+        <div class="input">
+        <label for="pass"></label> <input type="password" placeholder="Password" required>
+          <div class="input">
+        <label for="pass"></label> <input type="password" placeholder="Confirm Password" required>
+            <a href="#">Forgot Password</a>
+      </div>
+        
+    </div>
+      <div class="btn">
+          <a href="#"><input type="submit" value="Log In"></a>
+        </div>
+  </div>
+</body>
+</html>
